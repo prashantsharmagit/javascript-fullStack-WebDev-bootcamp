@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* for all elements */
+        *{
+            /* If padding or margin are changed enough they can override width specified...to prevent that "box-sizing" is used */
+            /* marging and padding tends to change total width of element so border-box include them total element size */
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: rgb(243, 205, 159);
+            border: 3px solid rgb(228, 243, 16);
+            /*padding : top right bottom left*/
+            /* Same goes for margin */
+            padding: 5px 15px 10px 20px;
+            margin: 5px;
+            border-radius: 23px;
+            width: 233px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is a heading</h3>
+        <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, atque nobis animi facere magnam in vitae deserunt sint eius natus.</p>
+    </div>
+    <div class="container">
+        <h3>This is a heading</h3>
+        <p id="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, atque nobis animi facere magnam in vitae deserunt sint eius natus.</p>
+    </div>
+    <div class="container">
+        <h3>This is a heading</h3>
+        <p id="third">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, atque nobis animi facere magnam in vitae deserunt sint eius natus.</p>
+    </div>
+</body>
+</html>

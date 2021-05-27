@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alignment</title>
+    <!-- Used google font below -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Ubuntu", sans-serif;
+      }
+      .container {
+        width: 675px;
+        border: 3px solid black;
+        /* margin : auto >> takes equal margin from left and right in x-axis */
+        margin: 50px auto; /*y-axis x-axis*/
+      }
+      .item {
+        border: 3px solid grey;
+        margin: 12px 5px;
+        padding: 12px 5px;
+        background: rgb(245, 210, 210);
+      }
+      #fruits {
+        float: left;
+        width: 48%;
+      }
+      #computer {
+        float: left;
+        width: 48%;
+      }
+      #stationary {
+          /* This will keep elements away from overlapping which are "float:left: ;" */
+          clear: left;
+        /* float: left; */
+        width: 98%;
+      }
+      p,h3{
+          text-align: justify;
+      }
+      h1{
+          /* margin: auto;
+          width: 50%; */
+          text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+      <div id="fruits" class="item">
+        <h3>Fruits</h3>
+        <p id="fruitsPara" class="para">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+          sunt? Porro in error sapiente cum numquam, distinctio totam accusamus
+          libero, veniam iste ipsa est suscipit deserunt ea, nemo modi
+          recusandae. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Earum blanditiis fugit eveniet distinctio fugiat esse corporis
+          voluptatem voluptates deleniti? Beatae assumenda, officiis cum porro
+          dignissimos distinctio quam dolores sint dolor.
+        </p>
+      </div>
+      <div id="computer" class="item">
+        <h3>Computer</h3>
+        <p id="computerPara" class="para">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+          sunt? Porro in error sapiente cum numquam, distinctio totam accusamus
+          libero, veniam iste ipsa est suscipit deserunt ea, nemo modi
+          recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Doloribus numquam rem facilis facere doloremque, odit expedita unde
+          voluptatem, ut officiis fugit deserunt animi. Tenetur accusamus, nemo
+          ipsum amet tempora eos.
+        </p>
+      </div>
+      <div id="stationary" class="item">
+        <h3>Stationary</h3>
+        <p id="stationaryPara" class="para">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+          sunt? Porro in error sapiente cum numquam, distinctio totam accusamus
+          libero, veniam iste ipsa est suscipit deserunt ea, nemo modi
+          recusandae.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

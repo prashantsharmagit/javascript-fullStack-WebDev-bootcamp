@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & Input tags</title>
+</head>
+<body>
+    <form action="backend.json">    <!--Action is where submitted data of form is stored-->
+        <div>
+            <label for="name">Name : </label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            Role : <input type="text">
+        </div>
+        <div>
+            Email : <input type="email" name="myEmail">    <!--name is used to identify this element in backend-->
+        </div>
+        <div>
+            <input type="date" name="myDate">
+        </div>
+        <div>
+            Bonus : <input type="number" name="myBonus">
+        </div>
+        <div>
+            <!--"checked" makes this tickbox checked by default-->
+            Eligible? : <input type="checkbox" name="myCheckBox" checked>
+        </div>
+        <div>
+            <!-- Only one radio button will be selected because of "same name" -->
+            Gender : Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+        </div>
+        <div>
+            <textarea name="myText" cols="0" rows="10" id="forlabel"></textarea>
+        </div>
+        <!-- This is label for element with same id as mentioned -->
+        <label for="forlabel">Write : </label>
+        <!-- When you click on label...element gets selected -->
+        <div>
+            <label for="car">Car</label>
+            <!-- This is drop down menu list -->
+            <select name="myCar" id="car">
+                <!-- This is option in drop down -->
+                <option value="ind">Indicia</option>
+                <option value="swift">Switft</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>

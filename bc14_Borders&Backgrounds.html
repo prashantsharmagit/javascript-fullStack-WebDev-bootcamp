@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, width, borders and backgrounds</title>
+    <style>
+        #firstPara{
+            color: white;
+            background-color: red;
+            height: 70px;
+            width: 679px;
+            /* border-width: 3px;
+            border-style: solid;
+            border-color: yellowgreen; */
+            border: 3px solid yellowgreen;
+            border-radius: 7px;
+        }
+        #secondPara{
+            color: white;
+            background-color: rgb(255, 136, 0);
+            height: 70px;
+            width: 679px;
+            border-top: 3px solid rgb(0, 225, 255);
+            border-bottom: 3px solid rgb(136, 255, 0);
+            border-left: 3px solid rgb(55, 0, 255);
+            border-right: 3px solid rgb(255, 0, 170);
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 50px;
+        }
+        #thirdPara{
+            height: 400px;
+            width: 679px;
+            background-image: url('https://source.unsplash.com/200x200/?photographer,');
+            border: 3px solid red;
+            background-repeat: no-repeat;   /*repeat-x and repeat-y will make image repeat in x-axis and y-axis*/
+            background-position: center center; /*x y coordinates*/
+        }
+    </style>
+</head>
+<body>
+    <h3>This is first heading</h3>
+    <p id="firstPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, illo. Accusamus corrupti perspiciatis voluptatibus veritatis ullam quod facilis unde minus vero officiis aliquam officia soluta expedita, explicabo totam consequuntur dolor!</p>
+
+    <h3>This is second heading</h3>
+    <p id="secondPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, illo. Accusamus corrupti perspiciatis voluptatibus veritatis ullam quod facilis unde minus vero officiis aliquam officia soluta expedita, explicabo totam consequuntur dolor!</p>
+    
+    <h3>This is third heading</h3>
+    <p id="thirdPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, illo. Accusamus corrupti perspiciatis voluptatibus veritatis ullam quod facilis unde minus vero officiis aliquam officia soluta expedita, explicabo totam consequuntur dolor!</p>
+</body>
+</html>
