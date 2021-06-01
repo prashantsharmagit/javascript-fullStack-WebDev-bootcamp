@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visibility and z-Index</title>
+  <style>
+    .box {
+      width: 150px;
+      height: 150px;
+      border: 2px solid black;
+    }
+
+    #box1 {
+      /* by default --> visibility:visible */
+      background-color: green;
+    }
+
+    #box2 {
+      /* Comment and uncomment these one by one to see the diifference */
+
+      /* This will hide element but will show empty space */
+      /* visibility: hidden; */
+
+      /* This will hide the element and space both */
+      /* display: none; */
+      background-color: blue;
+    }
+
+    #box3 {
+      /* z-index works for only postion: relative, abosolute, fixed or sticky */
+
+      position: relative;
+      top: 25px;
+      /* Element with greater z-index will be up on the stack */
+      z-index: 51;
+      background-color: red;
+    }
+
+    #box4 {
+      /* z-index works for only postion: relative, abosolute, fixed or sticky */
+      position: relative;
+      top: 3px;
+
+      /* Element with lesser z-index will be down on the stack */
+      z-index: 50;
+      background-color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- div.box#box$*4   emmet is used here for 4 div with class 'box' and id 'box1..2..3..4(replacing $)' -->
+  <div class="box" id="box1"></div>
+  <div class="box" id="box2"></div>
+  <div class="box" id="box3"></div>
+  <div class="box" id="box4"></div>
+</body>
+
+</html>
