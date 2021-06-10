@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size units</title>
+    <style>
+        html {
+            font-size: auto;
+        }
+
+        .container {
+            font-size: 10px;
+            border: 2px solid red;
+            /* width: 400px; */
+            /* vw = viewport width */
+            width: 100vw;
+            /* height: 300px; */
+            /* vh = viewport height */
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #first {
+            /* when to use 'em' --> Whenever container/element is being frequently resized */
+            /* font-size: 3em; */
+            /* font-size will 3 times of it's container i.e  10px*3 = 30px */
+            /* padding: 3em; */
+            /* same here but this will take font-size as its parent */
+        }
+
+        #second {
+            /* when to use --> If browser's font-size changes so will this element */
+            /* font-size: 3rem; */
+            /* This will take hmtl as its parent */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading.</h1>
+        <h1 id="second">This is second heading.</h1>
+        <h1 id="third">This is third heading.</h1>
+    </div>
+</body>
+
+</html>
