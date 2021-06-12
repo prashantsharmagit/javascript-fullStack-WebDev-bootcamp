@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1 {
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* This will work when <p> is under div */
+        /* div p {
+            color: rgb(0, 0, 128);
+            background-color: orange;
+            font-weight: bold; */
+        /* } */
+
+        /* This will work when <p> is under <li> which is under <div> */
+        /* div li p {
+            color: rgb(49, 49, 49);
+            background-color: rgb(85, 167, 85);
+            font-weight: bold;
+        } */
+
+        /* This will work when <p> is directly under div */
+        /* div > p {
+            color: rgb(0, 0, 0);
+            background-color: rgb(231, 126, 77);
+            font-weight: bold;
+        } */
+
+        /* This will work <p> is following sibiling of div */
+        div + p {
+            color: black;
+            background-color: palevioletred;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>This paragraph is inside li</p>
+                </li>
+                <li>This wil not get affected</li>
+            </ul>
+            <p> This is a paragraph</p>
+        </div>
+        <p> This is another paragraph</p>
+    </div>
+    <p> This is the third paragraph</p>
+</body>
+
+</html>
