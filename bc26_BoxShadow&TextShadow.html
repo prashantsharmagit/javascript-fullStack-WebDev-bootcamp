@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .card {
+        padding: 20px 15px;
+        margin: 20px 15px;
+        border-radius: 2px;
+        text-align: center;
+        justify-content: center;
+        /* border: 2px solid red; */
+        background-color: rgb(241, 194, 130, 0.5);
+        /* offset-x, offset-y --> use negative value to cast shadow left and upside */
+        /* box-shadow: 5px 5px black; */
+        /* offset-x, offset-y, blur radius */
+        /* box-shadow: 3px 3px 10px black; */
+        /* offset-x, offset-y, blur radius, spread radius */
+        /* box-shadow: 3px 3px 10px 2px rgb(87, 86, 86, 0.3); */
+        /* inset will give shadows inwards */
+        /* box-shadow: inset 3px 3px 10px 2px rgb(87, 86, 86, 0.3); */
+        /* Multiple shadows are casted using comma */
+        box-shadow: 3px 3px 10px 2px rgb(87, 86, 86, 0.3), -3px -3px 10px 2px rgb(230, 230, 152);
+    }
+    .card h1{
+        text-shadow: 3px 3px 4px red;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h1>Card 1</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, molestias. Placeat tenetur libero cum
+                doloribus voluptatem vero consequuntur nostrum sunt!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h1>Card 2</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse praesentium adipisci nisi, nihil veniam
+                animi natus atque accusamus nesciunt odit.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h1>Card 3</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga nesciunt velit libero nemo ducimus
+                laudantium voluptate atque cumque, officia cum.</p>
+        </div>
+    </div>
+</body>
+
+</html>
