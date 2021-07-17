@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Vairables / Custom Properties</title>
+</head>
+<style>
+    :root{
+        /* Variables under ':root' can be accessed everywhere */
+        --borderColor: black;
+    }
+    .box {
+        /*
+        Variable is declared by '--' 
+        but this can be used in between these curly braces
+        */
+        --boxColor: yellow;
+        width: 200px;
+        height: 200px;
+        background-color: var(--boxColor);
+        border: 2px solid var(--borderColor);
+        margin: 2px 4px;
+    }
+
+    .container {
+        --boxColor: pink;
+        display: flex;
+        background-color: var(--boxColor);
+        border: 2px solid var(--borderColor);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
