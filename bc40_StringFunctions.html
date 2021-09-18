@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript : String Functions</title>
+</head>
+<body>
+    
+    <script>
+        var str = 'This is string.'
+        console.log(`Original : ${str}`)
+        
+        // This will return first occurence of substring
+        var position = str.indexOf('is')
+        console.log(`First occurence of 'is' :  ${position}`)
+        // This will return last occurence of substring
+        position = str.lastIndexOf('is')
+        console.log(`Last occurence of 'is' :  ${position}`)
+        
+        // Substring from a string
+        //(Starting index, last index)  --> It takes negative values too.
+        // console.log(`Substring :  ${substr1}`)
+        //(Starting index, last index)
+        // console.log(`Substring :  ${substr1}`)
+        //(Start index, length)
+        var substr1 = str.substr(1,3)
+        console.log(`Substring :  ${substr1}`)
+
+        // Replace function
+        var replacedStr = str.replace('string', 'PS')
+        console.log(`Original : ${str}`)
+        console.log(`Replaced : ${replacedStr}`)
+        console.log(`Char at given index : ${str.charAt(6)}`)
+
+        // Change string to upper case or lower case.
+        console.log(`Upper case : ${str.toUpperCase()}`)
+        console.log(`Upper case : ${str.toLowerCase()}`)
+
+        // Trims spaces from both end
+        var strWithSpaces = '    this  contains    whitespaces   '
+        console.log(`With spaces : ${strWithSpaces}`)
+        console.log(`Without spaces : ${strWithSpaces.trim()}`)
+
+    </script>
+</body>
+</html>
